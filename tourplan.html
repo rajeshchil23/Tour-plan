@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="container">
+                <div class="row justify-content-center m-2">
+                    <div class="tourism-card col-12 col-md-6">
+
+                        <h1 class="main-heading">Tour Plan</h1>
+                        <p class="paragraph">Plan your trip wherever you want to go.</p>
+                        <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">
+                        If there was just one symbol to represent all of India, it would be the
+                        Taj Mahal
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMysorePalaceDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                    <p class="favourite-place-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionVaranasiTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                        The Taj Mahal is considered to be the greatest architectural achievement
+                        in the whole range of Indo-Islamic architecture. Its recognised
+                        architectonic beauty has a rhythmic combination of solids and voids,
+                        concave and convex and light shadow; such as arches and domes further
+                        increases the aesthetic aspect. Not a piece of architecture, as other
+                        buildings are, but the proud passions of an emperor’s love wrought in
+                        living stones.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionFavouritePlaces')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionTajMahalplan')">
+                    Plan Trip
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                    <p class="detailed-view-card-description">
+                        The Golden Temple, also known as Harmandir Sahib is a gurdwara
+                        located in the city of Amritsar, Punjab, India. There are many
+                        places to visit Near Golden Temple.
+                    </p>
+                    <ol class="detailed-view-card-description">
+                        <li>Jallianwala Bagh</li>
+                        <li>Wagah Border</li>
+                        <li>Harike Wetland</li>
+                        <li>Bathinda Fort</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionFavouritePlaces')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionGoldenTempleplan')">
+                    Plan Trip
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionMysorePalaceDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="mysorePalaceCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="1"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mysorePalaceCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mysorePalaceCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+                    <p class="detailed-view-card-description">
+                        Mysore Palace, also called Amba Vilas Palace, is one of the most magnificent and largest palaces in India. Situated in the southern state of Karnataka, it used to be the official residence of the Wodeyar Dynasty, the rulers of Mysore from 1399 to 1950. The grand palace stands tall in the heart of Mysore city and attracts visitors from across the world. Being one of the prime attractions in India after the Taj Mahal, it certainly deserves a place in every traveler’s bucket list.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionFavouritePlaces')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionMysorePalaceplan')">
+                    Plan Trip
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionVaranasiTempleDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                    <p class="detailed-view-card-description">
+                        Sri Kashi Vishwanath Temple also known as the Golden Temple, it is dedicated to Lord Shiva, the presiding deity of the city. Varanasi is Said to be the point at which the first jyotirlinga, the fiery pillar of light by which shiva manifested has supremacy over others gods, broke through the Earth’s crust and flared towards the heavens. More than the Gaths and even the Ganga, the Shivalinga installed in the temple remains the devotional focus of Varanasi.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionFavouritePlaces')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionVaranasiTempleplan')">
+                    Plan Trip
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionTajMahalplan">
+        <div class="detailed-view-bg-container">
+            <div class="container4">
+                <h1>Agra Trip Itinerary</h1>
+                <h2>Day 1:</h2>
+                <p>
+                  Arrive in Agra. You can fly into Agra's Kheria Airport, or take a train or bus from Delhi.
+                    Check into your hotel. There are many hotels to choose from in Agra, to suit all budgets.
+                    In the afternoon, visit the Taj Mahal. The best time to visit is early in the morning, as the sun rises and the marble reflects the light. Be sure to purchase your tickets online in advance, as there can be long queues.
+                    In the evening, enjoy a traditional Indian meal at one of Agra's many restaurants.
+                </p>
+                <br>
+                <h2>Day 2:</h2>
+                In the morning, visit Agra Fort. This UNESCO World Heritage Site was once the seat of the Mughal Empire, and it offers stunning views of the Taj Mahal.
+                In the afternoon, visit some of Agra's other attractions, such as the Itmad-ud-Daulah's Tomb (also known as the "Baby Taj") or the Mehtab Bagh (a Mughal garden complex).
+                In the evening, take a walk along the banks of the Yamuna River, or enjoy a performance of Mughal music.
+                <br>
+                <h2>Day 3:</h2>
+                In the morning, do some souvenir shopping at one of Agra's many bazaars.
+                In the afternoon, depart from Agra and head back to Delhi, or continue on your travels to other parts of India.
+                <br>
+
+                <h2>Additional Tips:</h2>
+                The best time to visit the Taj Mahal is during the cooler months, from October to March.
+                Be sure to dress modestly when visiting the Taj Mahal, as it is a place of worship.
+                Shoes are not allowed inside the Taj Mahal, so be sure to bring socks or shoe covers.
+                Photography is not allowed inside the Taj Mahal mausoleum, but it is allowed in the gardens and surrounding areas.
+                I hope this helps you plan your trip to the Taj Mahal!
+
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionTajMahalDetailedView')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionHome')">
+                    Home
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <div id="sectionGoldenTempleplan">
+        <div class="detailed-view-bg-container">
+            <div class="container4">
+                <h1>Golden Temple Trip Itinerary: Amritsar and Beyond</h1>
+                <h2>Day 1:</h2>
+                Arrive in Amritsar and experience the Golden Temple
+                Arrive in Amritsar and check into your hotel.
+                Immerse yourself in the spiritual heart of Amritsar by visiting the Golden Temple, also known as Harmandir Sahib. Witness the serene atmosphere and partake in the langar (community kitchen) serving free vegetarian meals.
+                <br>
+                <h2>Day 2:</h2>
+                Reflect at Jallianwala Bagh and witness the Wagah Border ceremony
+                In the morning, visit Jallianwala Bagh, a public garden infamous for the Jallianwala Bagh massacre in 1919. Pay your respects at the Jyoti Stambh, the eternal flame memorial.
+                In the afternoon, head towards the Wagah Border, the only land border crossing between India and Pakistan. Witness the colorful and energetic Beating Retreat ceremony held every evening, marking the closure of the border.
+                <br>
+                <h2>Day 3:</h2>
+                Explore the natural beauty of Harike Wetland
+                Take a day trip to the Harike Wetland, the largest wetland in North India. Enjoy bird watching, boat rides, and the diverse flora and fauna of this Ramsar Site.
+                <br>
+                <h2>Day 4:</h2>
+                Discover the historic Bathinda Fort and depart from Amritsar
+                On your last day, visit the majestic Bathinda Fort, a historical landmark dating back to the 10th century AD. Explore the fort's ramparts, palaces, and intricate carvings.
+                Depart from Amritsar, carrying unforgettable memories of your cultural and historical exploration.
+                <br>
+                <h2>Additional Tips:</h2>
+                The best time to visit Amritsar is from October to March, during the cooler months.
+                Be sure to dress modestly when visiting religious sites like the Golden Temple and Jallianwala Bagh.
+                Comfortable shoes are recommended for exploring the various locations.
+                Consider hiring a local guide to gain deeper insights into the history and culture of the places you visit.
+                I hope this itinerary helps you plan your trip to Amritsar and its surrounding gems!
+
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionGoldenTempleDetailedView')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionHome')">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionMysorePalaceplan">
+        <div class="detailed-view-bg-container">
+            <div class="container4">
+                <h1>Mysore Trip Itinerary</h1>
+
+                <h2>Day 1:</h2>
+                Unveiling the grandeur of Mysore Palace
+                Start your morning with the crown jewel of Mysore, the magnificent Mysore Palace. Explore the intricate carvings, opulent durbar halls, and beautiful courtyards. Be mesmerized by the grandeur of this architectural marvel, a blend of Hindu, Muslim, and British architectural styles.
+                In the afternoon, delve deeper into the royal heritage by visiting the Jaganmohan Palace, located within the palace complex. This neo-classical style palace served as the official residence of the Wodeyars.
+                In the evening, take a stroll along the vibrant Devaraja Market, a shopper's paradise offering everything from sandalwood products and silk sarees to colorful spices and local handicrafts.
+                <br>
+                <h2>Day 2:</h2>
+                Exploring the diverse cultural tapestry of Mysore
+                Begin your day at the captivating Sri Chamundeshwari Temple perched atop Chamundi Hill. Take in the panoramic views of the city and experience the spiritual serenity of this ancient temple dedicated to Goddess Chamundeshwari.
+                In the afternoon, immerse yourself in the rich flora and fauna at the Mysore Zoo, one of the oldest and largest zoos in India. Spot a variety of animals, including lions, tigers, elephants, and exotic birds.
+                In the evening, witness the mesmerizing illumination of the Mysore Palace. The palace comes alive with thousands of colorful lights, creating a truly magical spectacle.
+                <br>
+                <h2>Day 3:</h2>
+                Unveiling the hidden gems of Mysore
+                On your last day, embark on a journey to the Brindavan Gardens, known as the "Garden of Melody." Witness the musical fountains come alive in a synchronized display of water, light, and music, creating a mesmerizing experience.
+                In the afternoon, visit the Rail Museum, a treasure trove for train enthusiasts, showcasing the evolution of locomotives and railway carriages in India.
+                As a final stop, indulge in a traditional Mysore meal, savoring the unique flavors of South Indian cuisine before departing from this captivating city.
+                <br>
+                <h2>Additional Tips:</h2>
+                The best time to visit Mysore is from October to March, during the pleasant weather conditions.
+                Consider purchasing a Mysore Palace Combo Ticket for entry to the main palace, Jaganmohan Palace, and the Folklore Museum.
+                While visiting religious sites, dress modestly and be mindful of local customs.
+                Mysore is known for its vibrant silk sarees and sandalwood products. Consider these as potential souvenirs.
+                I hope this itinerary inspires you to plan your 3-day trip to Mysore and explore the city's rich culture, majestic palaces, and captivating natural beauty!
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionMysorePalaceDetailedView')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionHome')">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionVaranasiTempleplan">
+        <div class="detailed-view-bg-container">
+            <div class="container4">
+                <h1>Varanasi Trip Itinerary</h1>
+
+                <h2>Day 1:</h2>
+                Exploring the Ghats and Kashi Vishwanath Temple
+                Morning: Start your day early to witness the sunrise over the Ganges River. Take a boat ride on the Ganges and observe the various rituals and ceremonies performed on the ghats (steps leading down to the river).
+                Afternoon: Visit the Kashi Vishwanath Temple, the holiest Shiva temple in India. Be prepared for crowds and long queues, especially during peak season.
+                Evening: Participate in the Ganga Aarti ceremony, a beautiful and vibrant evening ritual of offering prayers to the Ganges River with fire and flowers.
+                <br>
+                <h2>Day 2:</h2>
+                Unveiling the rich tapestry of Varanasi
+                Morning: Visit the Bharat Mata Temple, dedicated to Mother India. The temple has a large map of India made of marble and offers a unique perspective on the country's diversity.
+                Afternoon: Explore the narrow lanes and bustling bazaars of Varanasi, experiencing the city's vibrant street life.
+                Evening: Attend a classical Indian music or dance performance to immerse yourself in the cultural heritage of Varanasi.
+                <br>
+                <h2>Day 3:</h2>
+                Sarnath and beyond
+                Morning: Take a day trip to Sarnath, the place where Gautama Buddha delivered his first sermon after attaining enlightenment. Explore the archaeological ruins and serene monasteries in Sarnath.
+                Afternoon: Visit the Durga Temple, one of the oldest temples in Varanasi, dedicated to the goddess Durga.
+                Evening: Spend your last evening in Varanasi reflecting on your experiences and enjoying a farewell dinner at a local restaurant.
+                <br>
+                <h2>Additional Tips:</h2>
+                The best time to visit Varanasi is from October to March, during the pleasant weather conditions.
+                Be mindful of local customs and dress modestly, especially when visiting temples.
+                Be prepared for crowds and bargaining when shopping in the bazaars.
+                Consider hiring a local guide to gain deeper insights into the history and culture of Varanasi.
+                I hope this itinerary helps you plan your trip to Varanasi and experience the spiritual and cultural significance of this ancient city.
+
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-dark m-2" onclick="display('sectionVaranasiTempleDetailedView')">
+                    back
+                </button>
+                <button class="btn btn-dark m-2" onclick="display('sectionHome')">
+                    Home
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
