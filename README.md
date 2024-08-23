@@ -1,4 +1,4 @@
 # Tour-plan
-Static Website (HTML, CSS, BOOTSTRAP)
+Static Website (HTML, CSS, JavaScript, BOOTSTRAP)
 
-https://tourplanapr23.ccbp.tech/
+(https://tourplanrjch.ccbp.tech/)
