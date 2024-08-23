@@ -138,3 +138,35 @@
 .container4 h2 {
     color: #007bff;
 }
+
+
+
+:root {
+    --primary-color: #25b1cc;
+    --secondary-color: #0f0e46;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Card hover effects */
+.tourism-card, .favourite-place-card-container {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tourism-card:hover, .favourite-place-card-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
