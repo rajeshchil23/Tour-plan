@@ -7,11 +7,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-// Toggle visibility of sections
-function display(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.style.display = section.id === sectionId ? 'block' : 'none';
-    });
-}
